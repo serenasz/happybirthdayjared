@@ -1,26 +1,79 @@
-h1 {
-    color: aqua;
-} 
-
 a {
-    text-align: center;
-    margin-top: 15px;
+  color: #d396cf;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  text-decoration: none;
 
-    border-width: 2px;
-    padding: 20px;
+  border-width: 2px;
+  padding: 20px;
 
-    width: 290px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 290px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    
-    border-radius: 61px;
-    background: #a795d0;
-    box-shadow:  31px 31px 61px #8e7fb1,
-                 -31px -31px 61px #c0abef;
+  border: solid;
+  border-radius: 20px;
+  background: #482d46;
+  box-shadow: 20px 20px 60px #3d263c,
+    -20px -20px 60px #533451;
+}
+
+a:hover {
+  color: #3d263c;
+  background-color: #d396cf;
+  transition: 400ms;
+  font-weight: bold;
 }
 
 body {
-  background-color: #a795d0;  
+  background-color: #482d46;
+
+
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  color: #d396cf;
+}
+
+.pics {
+  height: 150px;
+  width: 150px;
+  padding: 4px;
+}
+
+.jared {
+  height: 375px;
+  width: 300px;
+}
+
+.hater {
+height: 60px;
+width: 300px;
+padding: 20px;
+}
+
+ul {
+  padding: 10px;
+  text-align: center;
+  list-style-position: inside;
 }
